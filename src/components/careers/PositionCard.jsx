@@ -2,18 +2,16 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarDay,faLandmark, faTableColumns,faGraduationCap,faCartShopping,faCreditCard,faChartGantt,faTv} from '@fortawesome/free-solid-svg-icons';
+
 
 const cardData = [
-    { icon: faCalendarDay, description: 'Community Events', link: '/card1' },
-    { icon: faLandmark, description: 'Courses', link: '/card2' },
-    { icon: faTableColumns, description: 'Deshboard', link: '/card3' },
-    { icon: faGraduationCap, description: 'Online Class', link: '/card4' },
-    { icon: faCartShopping, description: 'Order', link: '/card5' },
-    { icon: faCreditCard, description: 'Payment Mathods', link: '/card6' },
-    { icon: faChartGantt, description: 'Refund Process', link: '/card7' },
-    { icon: faTv, description: 'Refund Process', link: '/card8' }
+    { title:"English Instructor for Kids", description: 'Remote (online)',Salary: 'Negotiable', link: '/card1' },
+    { title:"Online Consultant ", description: 'Remote (online)',Salary: 'Negotiable', link: '/card2' },
+    { title:"Executive, Operations", description: 'Remote (online)',Salary: 'Negotiable', link: '/card3' },
+    { title:"Executive, TeleSales", description: 'Remote (online)',Salary: 'Negotiable', link: '/card4' },
+    { title:"Creative Designer", description: 'Remote (online)',Salary: 'Negotiable', link: '/card5' },
+    { title:"Video Editor", description: 'Remote (online)',Salary: 'Negotiable', link: '/card6' },
+    
   ];
 
 const PositionCard = () => {
@@ -21,11 +19,15 @@ const PositionCard = () => {
         <Container className='my-5'>
       <Row>
         {cardData.map((card, index) => (
-          <Col key={index} md={3} className="mb-4">
+          <Col key={index} md={4} className="mb-4">
             <Card style={{ width: '100%', cursor: 'pointer' }} onClick={() => window.location.href = card.link}>
-              <Card.Body>
-                <FontAwesomeIcon icon={card.icon} size="2x" />
-                <Card.Text>{card.description}</Card.Text>
+              <Card.Body> 
+
+              <div className='d-flex justify-content-center border bg-success text-white w-25 rounded my-2 '>Live</div>
+                <Card.Title>{card.title}</Card.Title>
+                  
+                <Card.Text>Job Type: {card.description}</Card.Text>
+                <Card.Text>Salary: {card.Salary}</Card.Text>
               </Card.Body>
             </Card>
           </Col>
