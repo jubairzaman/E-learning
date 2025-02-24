@@ -1,9 +1,12 @@
+import AvailablePosition from "./AvailablePosition";
+import CareerHero from "./CareerHero";
 
 const Careers = () => {
     return (
         <div>
 
-            This is careers Page
+            <CareerHero/>
+            <AvailablePosition/>
             
         </div>
     );
