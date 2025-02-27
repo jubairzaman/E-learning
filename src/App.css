@@ -2,14 +2,14 @@
     font-family: 'li-ador';
     font-style: normal;
     font-weight: normal;
-    src:  url('../public/Li\ Ador\ Noirrit\ Regular.ttf');
+    src:  url('/fonts/reguler.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'li-ador-b';
     font-style: normal;
     font-weight: normal;
-    src:  url('../public/Li\ Ador\ Noirrit\ Bold.ttf');
+    src: url('/fonts/bold.ttf') format('truetype');
 } 
 
   .ador{
