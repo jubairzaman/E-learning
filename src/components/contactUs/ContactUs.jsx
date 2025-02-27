@@ -1,12 +1,13 @@
 import Contactdetails from "./Contactdetails";
-import ContactHero from "./contactHero";
+import ContactHero from './ContactHero';
+
 
 
 const ContactUs = () => {
     return (
         <div>
 
-           <ContactHero/>
+           <ContactHero></ContactHero>
            <Contactdetails/>
             
         </div>
