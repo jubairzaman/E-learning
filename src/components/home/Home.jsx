@@ -1,8 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row,Col, Button } from 'react-bootstrap';
 import { motion } from "framer-motion";
+import {useNavigate} from "react-router"
 
 const Home = () => {
+    const navigate = useNavigate();
     return (
         <div className="container-fluid vh-100 d-flex align-items-center justify-content-center bgcolor text-white position-relative overflow-hidden">
             <Container>
@@ -26,7 +28,7 @@ const Home = () => {
                         <h1 className='ador-b herofont'>স্মার্ট ভবিষ্যৎ</h1>
 
                         <p className='ador'>সব বয়সীদের উপযোগী ইংলিশ কোর্সের সাথে</p>
-                        <Button className='buttoncolor'>Browse Code</Button>
+                        <Button onClick={() => navigate("/courses")} className='buttoncolor'>আমাদের কোর্সগুলো দেখুন</Button>
                     </div>
 
                     
