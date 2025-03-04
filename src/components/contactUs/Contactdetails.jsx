@@ -5,18 +5,20 @@ const Contactdetails = () => {
     return (
         <div className="container my-5">
 
-        <Row>
-            <Col className="">
+        <Row className="row gy-5">
+            <Col className="col-md-6 col-12">
 
-                <h3>Point Of Contact</h3>
-                <h4> Uttara Office</h4>
-                <p>House 19, Road 14, Sector 13,Uttara, Dhaka 1230 Bangladesh</p>
+                <h3>যোগাযোগের ঠিকানা</h3>
+                <h4>উত্তরা অফিস</h4>
+                <p>বাড়ি নম্বর ১৯, রোড নম্বর ১৪, সেক্টর ১৩ ,উত্তরা , ঢাকা ১২৩০, বাংলাদেশ</p>
             </Col>
-            <Col>
+            <Col className="col-md-6 col-12">
 
             <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>আপনার নাম</Form.Label>
+
+      <h2 >নিচের তথ্য গুলো দিয়ে পাঠিয়ে দিন</h2>
+        <Form.Label className="mt-4">আপনার নাম</Form.Label>
         <Form.Control type="Name" placeholder="আপনার পুরো নাম লিখুন" />
         
       </Form.Group>

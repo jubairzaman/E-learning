@@ -1,9 +1,10 @@
+import CourseHero from "./CourseHero";
 
 const Courses = () => {
     return (
         <div>
 
-            This is Courses Page
+            <CourseHero></CourseHero>
             
         </div>
     );
