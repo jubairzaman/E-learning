@@ -22,7 +22,7 @@ const Navbar1 = () => {
             <Nav.Link ><Link style={{ textDecoration: 'none', color: 'black' }} to="/careers">Career</Link></Nav.Link>
             <Nav.Link ><Link style={{ textDecoration: 'none', color: 'black' }} to="/contactus">Contact</Link></Nav.Link>
            
-            <Button className="justify-content-end" variant="dark">Student Hub</Button>
+            <Button className="justify-content-end " variant="dark"><Link style={{ textDecoration: 'none', color: 'White' }} to="/Login">Login</Link></Button>
 
           
           </Nav>
